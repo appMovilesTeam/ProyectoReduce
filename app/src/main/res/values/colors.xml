@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="whiteish">#e7e7ed</color>
+    <color name="lightGray">#d6d6dc</color>
+    <color name="grayish">#b5b5b6</color>
+    <color name="grayishGreen">#a2b3ae</color>
+    <color name="Greenish">#458277</color>
+    <color name="brownish">#c39c79</color>
+    <color name="deepYellow">#edc743</color>
+    <color name="Blueish">#65a6d3</color>
+    <color name="Mahogany">#c23234</color>
+
+
+</resources>

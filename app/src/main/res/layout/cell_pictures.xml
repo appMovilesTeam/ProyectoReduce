@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center_horizontal"
+        android:background="@color/whiteish"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:id="@+id/picture_set2"
+            android:src="@drawable/icono_" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/button_corazon"
+            android:background="@drawable/corazón_" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/button_estrella"
+            android:background="@drawable/estrella_2" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:id="@+id/button_share"
+            android:background="@drawable/compartir_" />
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/button_masCont"
+            android:layout_marginStart="170dp"
+            android:background="@drawable/iconos_app"
+            android:rotation="90" />
+    </LinearLayout>
+
+</LinearLayout>

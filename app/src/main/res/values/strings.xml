@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Reduce</string>
+    <string name="inicio">Iniciar Sesión</string>
+    <string name="cuenta">Crear una cuenta</string>
+    <string name="next">Siguiente</string>
+    <string name="Nombre">Nombre del Artículo</string>
+    <string name="titulo">Titulo del Artículo</string>
+    <string name="nombre_articulo">Nombre del Artículo</string>
+    <string name="subir_un_archivo">Subir un archivo</string>
+
+
+</resources>

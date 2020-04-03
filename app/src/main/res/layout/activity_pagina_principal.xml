@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaginaPrincipal">
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:src="@drawable/iconos_app"
+        android:layout_gravity="right"
+        android:layout_marginRight="50dp" />
+
+    <LinearLayout
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/image_circle">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icono_"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingHorizontal="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gabriela"
+            android:textSize="20sp"
+            android:fontFamily="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blog personal"
+            android:textSize="12sp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/estrella_" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/casa_" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/usuario_2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mas_" />
+
+</LinearLayout>
