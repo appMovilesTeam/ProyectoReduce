@@ -70,6 +70,7 @@
             <ImageButton
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/blog_principal"
                 android:background="@drawable/casa_" />
 
             <ImageButton

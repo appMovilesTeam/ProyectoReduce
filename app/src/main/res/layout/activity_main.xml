@@ -47,6 +47,7 @@
             android:layout_marginTop="45dp"
             android:background="@drawable/round_button"
             android:text="@string/inicio"
+            android:id="@+id/inicio_sesion"
             android:textColor="@color/whiteish"
             android:textSize="12sp" />
 
@@ -55,6 +56,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:id="@+id/crea_cuenta"
             android:background="@drawable/round_button2"
             android:text="@string/cuenta"
             android:textColor="@color/whiteish"

@@ -65,6 +65,7 @@
             android:textSize="12sp"
             android:textColor="@color/whiteish"
             android:layout_gravity="center"
+            android:id="@+id/Siguientes_datos"
             android:text="@string/next"
             android:background="@drawable/round_button" />
 

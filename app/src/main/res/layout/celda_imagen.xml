@@ -17,4 +17,5 @@
             android:id="@+id/picture_set2"
             android:src="@drawable/icono_" />
     </LinearLayout>
+
 </LinearLayout>
