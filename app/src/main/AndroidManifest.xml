@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaginaPrincipal"></activity>
+        <activity android:name=".Principal_Activity"></activity>
+        <activity android:name=".Inicio_Google" />
+        <activity android:name=".PaginaPrincipal" />
         <activity android:name=".HomeBlog" />
         <activity android:name=".Detalle_articulo" />
         <activity android:name=".Datos" />
