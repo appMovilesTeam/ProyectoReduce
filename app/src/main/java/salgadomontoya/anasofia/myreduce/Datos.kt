@@ -14,7 +14,7 @@ class Datos : AppCompatActivity() {
         val button1 : Button =findViewById(R.id.Finalizar_inscripcion) as Button
 
         button1.setOnClickListener {
-            var intent: Intent = Intent(this, PaginaPrincipal::class.java)
+            var intent: Intent = Intent(this, Principal_Activity::class.java)
             startActivity(intent)
         }
 
