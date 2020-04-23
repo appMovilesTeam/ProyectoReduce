@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email: mail@email.com"
+            android:id="@+id/email_usuario"
             android:textSize="12sp" />
 
         <EditText
@@ -42,12 +43,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone: +99 999 555 222"
+            android:id="@+id/telefono"
             android:textSize="12sp" />
 
         <EditText
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/contrasena"
             android:hint="Contraseña"
             android:textSize="12sp" />
 
@@ -56,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirmar Contraseña"
+            android:id="@+id/confirmar_contrasena"
             android:textSize="12sp" />
 
         <Button
@@ -91,6 +95,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="10dp"
+                android:id="@+id/inicio_sesion_google"
                 android:background="@drawable/gmail_" />
 
         </LinearLayout>

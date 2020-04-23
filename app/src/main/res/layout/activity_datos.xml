@@ -27,6 +27,7 @@
             android:src="@drawable/fondo_usuario"
             android:layout_width="100dp"
             android:layout_height="150dp"
+            android:id="@+id/foto_perfil"
             android:layout_gravity="center" />
 
 
@@ -34,12 +35,14 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email: mail@email.com"
+            android:id="@+id/nombre_usuario"
+            android:hint="Nombre de Usuario"
             android:textSize="12sp" />
 
         <EditText
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
+            android:id="@+id/categoria"
             android:layout_height="wrap_content"
             android:hint="Categoría"
             android:textSize="12sp" />

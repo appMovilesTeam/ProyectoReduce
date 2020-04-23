@@ -107,7 +107,7 @@
                 <ImageButton
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/corazón_" />
+                    android:background="@drawable/corazon_" />
 
                 <ImageButton
                     android:layout_width="30dp"
