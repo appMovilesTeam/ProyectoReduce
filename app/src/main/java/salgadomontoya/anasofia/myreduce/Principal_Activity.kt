@@ -21,10 +21,5 @@ class Principal_Activity : AppCompatActivity() {
         }
 
 
-
-
-
-
-
     }
 }

@@ -26,14 +26,17 @@ class MainActivity : AppCompatActivity() {
         val button1 : Button =findViewById(R.id.inicio_sesion) as Button
         val button2: Button= findViewById(R.id.crea_cuenta) as Button
 
+        button2.setOnClickListener {
+            var intento: Intent = Intent(this, Crear_cuenta::class.java)
+            startActivity(intento)
+        }
+
         button1.setOnClickListener {
             var intent: Intent = Intent(this, PaginaPrincipal::class.java)
             startActivity(intent)
         }
 
-        button2.setOnClickListener {
-            var intent: Intent = Intent(this, Crear_cuenta::class.java)
-        }
+
 
 // Configure sign-in to request the user's ID, email address, and basic
 // profile. ID and basic profile are included in DEFAULT_SIGN_IN.

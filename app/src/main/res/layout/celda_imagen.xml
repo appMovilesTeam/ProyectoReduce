@@ -6,16 +6,17 @@
         android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="160dp"
+        android:id="@+id/layout"
         android:gravity="center_horizontal"
         android:background="@color/whiteish"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="100dp"
+        <ImageButton
+            android:layout_width="80dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:id="@+id/picture_set2"
-            android:src="@drawable/icono_" />
+            android:background="@drawable/icono_" />
     </LinearLayout>
 
 </LinearLayout>

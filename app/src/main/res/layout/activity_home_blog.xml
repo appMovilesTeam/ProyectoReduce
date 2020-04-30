@@ -25,7 +25,8 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginEnd="170dp"
-            android:src="@drawable/casa_2" />
+            android:id="@+id/button_casa2"
+            android:background="@drawable/casa_2" />
 
     </LinearLayout>
 
@@ -39,6 +40,7 @@
     <ListView
         android:layout_marginTop="60dp"
         android:layout_width="match_parent"
+        android:id="@+id/list_product"
         android:layout_height="wrap_content" />
 
 
