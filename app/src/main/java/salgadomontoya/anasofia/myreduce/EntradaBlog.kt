@@ -1,3 +1,3 @@
 package salgadomontoya.anasofia.myreduce
 
-data class EntradaBlog (var image: Int, var corazon: Int, var estrella: Int, var compartir: Int, var opciones: Int)
+data class EntradaBlog (var image: Int, var corazon: Boolean, var estrella: Boolean, var titulo: String, var autor: String, var imagenDelAutor: Int, var contenido: String)
