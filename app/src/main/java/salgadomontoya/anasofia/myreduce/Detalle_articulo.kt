@@ -2,6 +2,7 @@ package salgadomontoya.anasofia.myreduce
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_detalle_articulo.*
 
 class Detalle_articulo : AppCompatActivity() {
 
@@ -9,6 +10,14 @@ class Detalle_articulo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalle_articulo)
 
+        val bundle = intent.extras
+        if (bundle != null){
+            imagen_articulo.setImageResource(bundle.getInt("imagen"))
+            titulo.setText(bundle.getString("titulo"))
+            autor.setText(bundle.getString("autor"))
+            perfil.setImageResource(bundle.getInt("perfil"))
+            resumen_articulo.setText(bundle.getString("contenido"))
+        }
 
     }
 }

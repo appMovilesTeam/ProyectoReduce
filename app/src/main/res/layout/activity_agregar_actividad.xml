@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AgregarActividad">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Agrega una actividad"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/Greenish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Nombre del articulo"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Titulo del articulo"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

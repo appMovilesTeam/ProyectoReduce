@@ -19,6 +19,7 @@ import kotlinx.android.synthetic.main.cell_pictures.view.*
 
 class PaginaPrincipal : AppCompatActivity() {
 
+
     var entradas = ArrayList<EntradaBlog>()
     var adaptador:EntradasAdapter?= null
 
@@ -32,6 +33,14 @@ class PaginaPrincipal : AppCompatActivity() {
             var intent: Intent = Intent(this, HomeBlog::class.java)
             startActivity(intent)
         }
+
+        val buttonmas : ImageButton =findViewById(R.id.mas_blogs) as ImageButton
+
+        buttoncasa.setOnClickListener {
+            var intent: Intent = Intent(this, AgregarActividad::class.java)
+            startActivity(intent)
+        }
+
         cargarEntradas()
         adaptador = EntradasAdapter(this, entradas)
         lista_contenido.adapter = adaptador
@@ -42,10 +51,6 @@ class PaginaPrincipal : AppCompatActivity() {
         entradas.add(EntradaBlog( R.drawable.articulo_2_2, false, false, "Mundo Saludable","Lucia Mendez",R.drawable.perfil2,"Cuidemos el planeta para tener un futuro sano y libre de contaminantes"))
         entradas.add(EntradaBlog( R.drawable.articulo_3_3, false, false, "Limpieza Profunda","Mario Costa",R.drawable.perfil3,"Se tiene que tener un anombiente limpio para una vida limpia"))
         entradas.add(EntradaBlog( R.drawable.articulo_4_4, false, false, "Plantas en todas partes","Maria Peña",R.drawable.perfil4,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
-        entradas.add(EntradaBlog( R.drawable.articulo_5_5, false, false, "Mundo Saludable","Luisa Costa",R.drawable.perfil5,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
-        entradas.add(EntradaBlog( R.drawable.articulo_6_6, false, false, "Mundo Saludable","Arturo Jimenez",R.drawable.perfil6,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
-
-
     }
 
 
@@ -63,8 +68,8 @@ class PaginaPrincipal : AppCompatActivity() {
             var vista = inflator.inflate(R.layout.cell_pictures, null)
             vista.picture_set.setImageResource(entrada.imagen)
          //   vista.lista_contenido.setImageResourse(entrada.imagen)
-
-            //  vista.button_corazon.setImageResource(R.drawable)
+            //  vista.button_corazon.setImageResource(R.drawab
+            //  le)
             vista.picture_set.setOnClickListener{
                 var intento = Intent(context, Detalle_articulo::class.java)
                 intento.putExtra("titulo",entrada.titulo)
@@ -72,7 +77,6 @@ class PaginaPrincipal : AppCompatActivity() {
                 intento.putExtra("imagen",entrada.imagenDelAutor)
                 intento.putExtra("contenido",entrada.contenido)
                 context!!.startActivity(intento)
-
             }
             return vista
         }

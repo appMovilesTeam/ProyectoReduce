@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         button1.setOnClickListener {
-            var intent: Intent = Intent(this, PaginaPrincipal::class.java)
-            startActivity(intent)
+            var intento2: Intent= Intent(this, PaginaPrincipal::class.java)
+            startActivity(intento2)
         }
 
 

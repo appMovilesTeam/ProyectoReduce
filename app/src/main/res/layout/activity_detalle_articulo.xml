@@ -21,6 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:gravity="center_horizontal"
+                android:id="@+id/imagen_articulo"
                 android:background="@color/whiteish"
                 android:orientation="horizontal">
             </ImageView>
@@ -68,6 +69,7 @@
                         android:layout_marginLeft="100dp"
                         android:paddingHorizontal="40dp"
                         android:layout_marginTop="25dp"
+                        android:id="@+id/titulo"
                         android:text="@string/Nombre"
                         android:textStyle="bold"
                         android:textSize="20sp" />
@@ -77,6 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="100dp"
                         android:paddingHorizontal="40dp"
+                        android:id="@+id/autor"
                         android:text="Autor"
                         android:textSize="15sp" />
 
@@ -86,6 +89,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:id="@+id/perfil"
                     android:src="@drawable/fondo_usuario2"
                     android:layout_marginRight="200dp" />
 
@@ -107,12 +111,14 @@
                 <ImageButton
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:id="@+id/corazon"
                     android:background="@drawable/corazon_" />
 
                 <ImageButton
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="70dp"
+                    android:id="@+id/button_estrella"
                     android:background="@drawable/estrella_" />
 
             </LinearLayout>
