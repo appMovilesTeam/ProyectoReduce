@@ -1,15 +1,18 @@
 package salgadomontoya.anasofia.myreduce
 
+import android.app.ActionBar
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_datos.*
 import kotlinx.android.synthetic.main.activity_pagina_principal.*
 import kotlinx.android.synthetic.main.activity_pagina_principal.nombre_usuario
@@ -35,8 +38,7 @@ class PaginaPrincipal : AppCompatActivity() {
         }
 
         val buttonmas : ImageButton =findViewById(R.id.mas_blogs) as ImageButton
-
-        buttoncasa.setOnClickListener {
+        buttonmas.setOnClickListener {
             var intent: Intent = Intent(this, AgregarActividad::class.java)
             startActivity(intent)
         }
@@ -46,7 +48,6 @@ class PaginaPrincipal : AppCompatActivity() {
         lista_contenido.adapter = adaptador
 
     }
-
     fun cargarEntradas(){
         entradas.add(EntradaBlog( R.drawable.articulo_2_2, false, false, "Mundo Saludable","Lucia Mendez",R.drawable.perfil2,"Cuidemos el planeta para tener un futuro sano y libre de contaminantes"))
         entradas.add(EntradaBlog( R.drawable.articulo_3_3, false, false, "Limpieza Profunda","Mario Costa",R.drawable.perfil3,"Se tiene que tener un anombiente limpio para una vida limpia"))
@@ -65,8 +66,11 @@ class PaginaPrincipal : AppCompatActivity() {
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
             var entrada = entradas[position]
             var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            var vista = inflator.inflate(R.layout.cell_pictures, null)
+            var vista = inflator.inflate(R.layout.celda_imagen, null)
+            Log.d("objeto", entrada.toString())
             vista.picture_set.setImageResource(entrada.imagen)
+            vista.picture_set.layoutParams= LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT)
+
          //   vista.lista_contenido.setImageResourse(entrada.imagen)
             //  vista.button_corazon.setImageResource(R.drawab
             //  le)

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +25,6 @@ class HomeBlog : AppCompatActivity() {
         setContentView(R.layout.activity_home_blog)
 
         val buttonRegresar : ImageButton =findViewById(R.id.retroceder) as ImageButton
-
         buttonRegresar.setOnClickListener {
             var intent: Intent = Intent(this, PaginaPrincipal::class.java)
             startActivity(intent)
@@ -33,9 +33,10 @@ class HomeBlog : AppCompatActivity() {
         adaptador = BlogAdapter(this, entradas)
         list_entradas.adapter = adaptador
     }
-
     fun cargarEntradas(){
-        entradas.add(EntradaBlog( R.drawable.articulo_2_2, true, true, "Mundo Saludable","Lucia Mendez",R.drawable.perfil3,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
+        entradas.add(EntradaBlog( R.drawable.articulo_2_2, true, true, "Mundo Saludable","Lucia Mendez",R.drawable.perfil2,"Cuidemos el planeta para tener un futuro sano y libre de contaminantes"))
+        entradas.add(EntradaBlog( R.drawable.articulo_3_3, true, true, "Limpieza Profunda","Mario Costa",R.drawable.perfil3,"Se tiene que tener un anombiente limpio para una vida limpia"))
+        entradas.add(EntradaBlog( R.drawable.articulo_4_4, true, true, "Plantas en todas partes","Maria Peña",R.drawable.perfil4,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
     }
 
 
@@ -51,7 +52,9 @@ class HomeBlog : AppCompatActivity() {
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
             var entrada = entradas[position]
             var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            var vista = inflator.inflate(R.layout.celda_imagen, null)
+            var vista = inflator.inflate(R.layout.cell_pictures, null)
+            Log.d("objeto", entrada.toString())
+
             vista.picture_set2.setImageResource(entrada.imagen)
             vista.picture_set2.button_corazon.setImageResource(R.drawable.corazon_)
             vista.picture_set2.button_estrella.setImageResource(R.drawable.estrella_amarillo)
