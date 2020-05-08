@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:id="@+id/layout"
@@ -15,7 +15,7 @@
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:scaleType="centerCrop"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
 
             android:id="@+id/picture_set"
             android:background="@drawable/icono_" />

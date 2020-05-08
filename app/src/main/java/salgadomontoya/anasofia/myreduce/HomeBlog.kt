@@ -39,8 +39,6 @@ class HomeBlog : AppCompatActivity() {
         entradas.add(EntradaBlog( R.drawable.articulo_4_4, true, true, "Plantas en todas partes","Maria Peña",R.drawable.perfil4,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
     }
 
-
-
     class BlogAdapter: BaseAdapter {
         var context: Context? =null
         var entradas = ArrayList<EntradaBlog>()
@@ -53,15 +51,15 @@ class HomeBlog : AppCompatActivity() {
             var entrada = entradas[position]
             var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var vista = inflator.inflate(R.layout.cell_pictures, null)
+            vista.pictures_set2.setImageResource(entrada.imagen)
             Log.d("objeto", entrada.toString())
 
-            vista.picture_set2.setImageResource(entrada.imagen)
-            vista.picture_set2.button_corazon.setImageResource(R.drawable.corazon_)
-            vista.picture_set2.button_estrella.setImageResource(R.drawable.estrella_amarillo)
-
+            vista.pictures_set2.button_corazon.setImageResource(R.drawable.corazon_)
+            vista.pictures_set2.button_estrella.setImageResource(R.drawable.estrella_amarillo)
             //  vista.button_corazon.setImageResource(R.drawable)
-            vista.picture_set2.setOnClickListener{
+            vista.pictures_set2.setOnClickListener{
                 var intento = Intent(context, Detalle_articulo::class.java)
+                intento.putExtra("imagenArticulo", entrada.imagen)
                 intento.putExtra("titulo",entrada.titulo)
                 intento.putExtra("autor",entrada.autor)
                 intento.putExtra("imagen",entrada.imagenDelAutor)

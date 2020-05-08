@@ -6,16 +6,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AgregarActividad">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/regresar_atras"
+            android:background="@drawable/flecha_retroceder"/>
 
     <TextView
         android:layout_marginTop="20dp"
         android:text="Agrega una actividad"
         android:gravity="center"
+        android:layout_marginRight="20dp"
         android:textSize="20sp"
         android:textColor="@color/Greenish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
+    </LinearLayout>
+
     <EditText
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
@@ -31,11 +46,18 @@
         android:hint="Titulo del articulo"
         android:layout_height="wrap_content"/>
 
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <ListView
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </LinearLayout>

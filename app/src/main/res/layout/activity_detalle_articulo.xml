@@ -22,6 +22,7 @@
                 android:layout_height="300dp"
                 android:gravity="center_horizontal"
                 android:id="@+id/imagen_articulo"
+                android:scaleType="centerCrop"
                 android:background="@color/whiteish"
                 android:orientation="horizontal">
             </ImageView>

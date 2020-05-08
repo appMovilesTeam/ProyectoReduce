@@ -12,10 +12,11 @@ class Detalle_articulo : AppCompatActivity() {
 
         val bundle = intent.extras
         if (bundle != null){
-            imagen_articulo.setImageResource(bundle.getInt("imagen"))
+
+            imagen_articulo.setImageResource(bundle.getInt("imagenArticulo"))
             titulo.setText(bundle.getString("titulo"))
             autor.setText(bundle.getString("autor"))
-            perfil.setImageResource(bundle.getInt("perfil"))
+            perfil.setImageResource(bundle.getInt("imagen"))
             resumen_articulo.setText(bundle.getString("contenido"))
         }
 

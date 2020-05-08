@@ -76,6 +76,7 @@ class PaginaPrincipal : AppCompatActivity() {
             //  le)
             vista.picture_set.setOnClickListener{
                 var intento = Intent(context, Detalle_articulo::class.java)
+                intento.putExtra("imagenArticulo", entrada.imagen)
                 intento.putExtra("titulo",entrada.titulo)
                 intento.putExtra("autor",entrada.autor)
                 intento.putExtra("imagen",entrada.imagenDelAutor)
