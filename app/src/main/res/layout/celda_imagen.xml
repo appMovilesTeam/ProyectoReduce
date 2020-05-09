@@ -16,7 +16,6 @@
             android:layout_height="60dp"
             android:scaleType="centerCrop"
             android:layout_gravity="center"
-
             android:id="@+id/picture_set"
             android:background="@drawable/icono_" />
     </LinearLayout>

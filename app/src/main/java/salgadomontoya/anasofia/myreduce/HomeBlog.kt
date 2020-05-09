@@ -18,7 +18,7 @@ class HomeBlog : AppCompatActivity() {
 
 
     var entradas = ArrayList<EntradaBlog>()
-    var adaptador:BlogAdapter?= null
+    var adaptador:HomeEntradasAdapter?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +29,9 @@ class HomeBlog : AppCompatActivity() {
             var intent: Intent = Intent(this, PaginaPrincipal::class.java)
             startActivity(intent)
         }
+
         cargarEntradas()
-        adaptador = BlogAdapter(this, entradas)
+        adaptador = HomeEntradasAdapter(this, entradas)
         list_entradas.adapter = adaptador
     }
     fun cargarEntradas(){
@@ -39,7 +40,7 @@ class HomeBlog : AppCompatActivity() {
         entradas.add(EntradaBlog( R.drawable.articulo_4_4, true, true, "Plantas en todas partes","Maria Peña",R.drawable.perfil4,"Cuidemonos el planeta para tener un futuro sano y libre de contaminantes"))
     }
 
-    class BlogAdapter: BaseAdapter {
+    class HomeEntradasAdapter: BaseAdapter {
         var context: Context? =null
         var entradas = ArrayList<EntradaBlog>()
 
@@ -51,12 +52,14 @@ class HomeBlog : AppCompatActivity() {
             var entrada = entradas[position]
             var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var vista = inflator.inflate(R.layout.cell_pictures, null)
-            vista.pictures_set2.setImageResource(entrada.imagen)
             Log.d("objeto", entrada.toString())
+            vista.pictures_set2.setImageResource(entrada.imagen)
+            vista.button_estrella.setImageResource(R.drawable.estrella_)
+            vista.button_corazon.setImageResource(R.drawable.corazon_)
 
-            vista.pictures_set2.button_corazon.setImageResource(R.drawable.corazon_)
-            vista.pictures_set2.button_estrella.setImageResource(R.drawable.estrella_amarillo)
-            //  vista.button_corazon.setImageResource(R.drawable)
+            //   vista.lista_contenido.setImageResourse(entrada.imagen)
+            //  vista.button_corazon.setImageResource(R.drawab
+            //  le)
             vista.pictures_set2.setOnClickListener{
                 var intento = Intent(context, Detalle_articulo::class.java)
                 intento.putExtra("imagenArticulo", entrada.imagen)
@@ -65,7 +68,6 @@ class HomeBlog : AppCompatActivity() {
                 intento.putExtra("imagen",entrada.imagenDelAutor)
                 intento.putExtra("contenido",entrada.contenido)
                 context!!.startActivity(intento)
-
             }
             return vista
         }
