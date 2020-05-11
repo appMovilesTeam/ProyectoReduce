@@ -41,7 +41,7 @@
             android:drawableEnd="@drawable/ic_subir_archivo"
             android:text="@string/subir_un_archivo"
             android:textAllCaps="false"
-            android:textColor="@color/Greenish" />
+            android:textColor="#47887D" />
     </LinearLayout>
 
     <EditText
