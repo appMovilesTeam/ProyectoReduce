@@ -2,4 +2,5 @@
 <resources>
 
     <dimen name="tamano_portada">180dp</dimen>
+    <dimen name="tamano_icono">24dp</dimen>
 </resources>
