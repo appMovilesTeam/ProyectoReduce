@@ -7,6 +7,9 @@
     <string name="titulo">Titulo del Artículo</string>
     <string name="nombre_articulo">Nombre del Artículo</string>
     <string name="subir_un_archivo">Subir un archivo</string>
+    <string name="titulo_articulo">Título del artículo</string>
+    <string name="label_texto">Texto</string>
+    <string name="pista_texto">Escribir algo...</string>
 
 
 </resources>

@@ -2,91 +2,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:autofillHints=""
+        android:background="@drawable/cuadro_texto"
+        android:ems="10"
+        android:hint="@string/titulo_articulo"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/titulo_articulo"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/cuadro_texto"
-            android:hint="Titulo del articulo"/>
+            android:text="@string/label_texto"
+            android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="10dp">
-
-            <TextView
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:text="Texto"
-                android:textSize="18dp"/>
-
-            <Button
-                android:id="@+id/boton_subir_archivo"
-                android:layout_width="wrap_content"
-                android:text="Subir un archivo"
-                android:textAllCaps="false"
-                android:layout_height="30dp"
-                android:textColor="@color/Greenish"
-                android:drawableRight="@drawable/ic_subir_archivo"
-                android:background="@android:color/transparent"/>
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/edtContactMessage"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/cuadro_texto"
-            android:textSize="?android:attr/text"
-            android:gravity="top"
-            android:hint="Escribir algo..."
-            android:imeOptions="actionDone"
-            android:inputType="textMultiLine"
-            android:lines="5"
-            android:maxLength="500"
-            android:minHeight="120dp"
-            android:scrollbars="vertical"
-            android:singleLine="false" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:id="@+id/layout"
-            android:gravity="center"
-            android:background="@color/whiteish"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:layout_gravity="center"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/picture_set"
-                android:background="@drawable/icono_" />
-
-            <ImageButton
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/ic_subir_imagen" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#FFFFFF"
+            android:drawableEnd="@drawable/ic_subir_archivo"
+            android:text="@string/subir_un_archivo"
+            android:textAllCaps="false"
+            android:textColor="@color/Greenish" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_marginBottom="10sp"
+        android:autofillHints=""
+        android:background="@drawable/cuadro_texto"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/pista_texto"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#E7E8EE">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:tint="#D6D7DD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icono_" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_subir_imagen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
