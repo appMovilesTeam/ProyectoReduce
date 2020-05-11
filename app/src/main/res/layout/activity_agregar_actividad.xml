@@ -38,6 +38,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:hint="Nombre del articulo"
+        android:background="@drawable/cuadro_texto"
         android:layout_height="wrap_content"/>
 
     <LinearLayout
