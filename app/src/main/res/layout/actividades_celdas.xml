@@ -6,22 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp"
-        android:autofillHints=""
-        android:background="@drawable/cuadro_texto"
-        android:ems="10"
-        android:hint="@string/titulo_articulo"
-        android:inputType="textPersonName"
-        android:selectAllOnFocus="false"
-        android:singleLine="true" />
-
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titulo_comentario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/label_texto"
@@ -29,7 +15,7 @@
         android:layout_marginBottom="10dp"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/comentario"
         android:layout_width="match_parent"
         android:layout_height="113dp"
         android:layout_marginBottom="10sp"
@@ -47,7 +33,7 @@
         android:background="#E7E8EE">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/picture_set3"
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:tint="#D6D7DD"
