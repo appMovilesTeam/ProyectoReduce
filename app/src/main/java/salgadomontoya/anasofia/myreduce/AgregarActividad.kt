@@ -1,13 +1,9 @@
 package salgadomontoya.anasofia.myreduce
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.Button
+import android.view.LayoutInflater
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 
 class AgregarActividad : AppCompatActivity() {
 
@@ -19,29 +15,8 @@ class AgregarActividad : AppCompatActivity() {
         //val arrayArticulo : ArrayList<EntradaBlog> = findViewById(R.id.)
 
         buttonAtras.setOnClickListener {
-            var intent: Intent = Intent(this, PaginaPrincipal::class.java)
-            startActivity(intent)
+            this.finish()
         }
 
-    }
-
-    class AdapterActividad: BaseAdapter {
-        constructor()
-
-        override fun getItem(position: Int): Any {
-            TODO("Not yet implemented")
-        }
-
-        override fun getItemId(position: Int): Long {
-            TODO("Not yet implemented")
-        }
-
-        override fun getCount(): Int {
-            TODO("Not yet implemented")
-        }
-
-        override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-            TODO("Not yet implemented")
-        }
     }
 }
