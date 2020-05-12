@@ -1,48 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:autofillHints=""
+        android:background="@drawable/cuadro_texto"
+        android:ems="10"
+        android:hint="@string/titulo_articulo"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="true" />
 
 
     <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Texto"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/titulo_comentario"
-        android:textSize="20sp"/>
+        android:text="@string/label_texto"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
 
     <EditText
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Inserte un comentario"
-        android:id="@+id/comentario"
-        android:layout_marginLeft="10dp"
-        android:textSize="20sp"/>
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_marginBottom="10sp"
+        android:autofillHints=""
+        android:background="@drawable/cuadro_texto"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/pista_texto"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
 
-    <LinearLayout
-        android:layout_marginTop="30dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:id="@+id/layout2"
-        android:gravity="center"
-        android:background="@color/whiteish"
-        android:orientation="horizontal">
+        android:background="#E7E8EE">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:scaleType="centerCrop"
-            android:layout_gravity="center"
-            android:id="@+id/picture_set3"
-            android:background="@drawable/icono_" />
-    </LinearLayout>
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:tint="#D6D7DD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icono_" />
 
-
-
-
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_subir_imagen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
