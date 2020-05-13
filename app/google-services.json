@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "758512356081",
+    "firebase_url": "https://proyectoreduce.firebaseio.com",
+    "project_id": "proyectoreduce",
+    "storage_bucket": "proyectoreduce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758512356081:android:e0842999e41cbb1a17b750",
+        "android_client_info": {
+          "package_name": "salgadomontoya.anasofia.myreduce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758512356081-fvtkb8hhh1b312qp2i98h2u3fanc7pdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtdcU35vtgW_IMwSQY65YB9s4IzhLIW-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758512356081-fvtkb8hhh1b312qp2i98h2u3fanc7pdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
