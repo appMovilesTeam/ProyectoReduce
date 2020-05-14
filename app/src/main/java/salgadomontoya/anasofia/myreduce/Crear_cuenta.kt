@@ -43,10 +43,11 @@ class Crear_cuenta : AppCompatActivity() {
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        inicio_sesion_google.setOnClickListener {
+        // DESACTIVADO: No es posible invocar la información del botón, lo que causa errores, de momento, no se registran usuarios nuevos
+        /*inicio_sesion_google.setOnClickListener {
             val signInIntent = mGoogleSignInClient.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
-        }
+        }*/
 
     }
 
