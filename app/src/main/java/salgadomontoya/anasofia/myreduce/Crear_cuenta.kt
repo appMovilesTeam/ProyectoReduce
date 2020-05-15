@@ -52,20 +52,6 @@ class Crear_cuenta : AppCompatActivity() {
     }
 
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) { // The Task returned from this call is always completed, no need to attach
-// a listener.
-            val task =
-                GoogleSignIn.getSignedInAccountFromIntent(data)
-            handleSignInResult(task)
-        }
-        if(requestCode == COD_LOGOUT){
-            signOut()
-        }
-    }
-
     override fun onStart() {
         super.onStart()
 
@@ -75,6 +61,20 @@ class Crear_cuenta : AppCompatActivity() {
 // the GoogleSignInAccount will be non-null.
         val account = GoogleSignIn.getLastSignedInAccount(this)
         updateUI(account)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) { // The Task returned from this call is always completed, no need to attach
+            // a listener.
+            val task =
+                GoogleSignIn.getSignedInAccountFromIntent(data)
+            handleSignInResult(task)
+        }
+        if(requestCode == COD_LOGOUT){
+            signOut()
+        }
     }
 
     private fun signOut() {
